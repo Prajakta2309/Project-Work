@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Register Form</h1>
+            <div class="register">
+                <form method="POST" onsubmit="validateForm()">  
+                    <div class="inputField">
+                        <label>FirstName : </label>
+                        <div><input type="text" id="firstname" onblur="validateFirstName()"></div>
+                        <div><span id="firstNameError" style="color: red;" ></span></div>
+                    </div>
+
+                    <div class="inputField">
+                        <label>LastName : </label>
+                        <div><input type="text" id="lastname" onblur="validateLastName()"></div> 
+                        <div><span id="lastsNameError" style="color: red;"></span></div>
+                    </div>
+
+                    <div class="inputField">
+                        <label>Email ID : </label>
+                        <div><input type="email" id="email" placeholder="Enter valid email Id" onblur="validateEmailId()"></div> 
+                        <div><span id="emailError" style="color: red;"></span></div>
+                    </div>
+
+                    <div class="inputField">
+                        <label>Password : </label>
+                        <div><input type="password" id="password" onblur="validatePassword()"></div> 
+                        <div><span id="passwordError" style="color: red;"></span></div>
+                    </div>
+
+                    <div class="inputField">
+                        <label>Password Confirmation : </label>
+                        <div><input type="password" id="passwordConfirmation" placeholder="Re-enter Password" onblur="validateConfirmPassword()"></div> 
+                        <div><span id="confirmpasswordError" style="color: red;"></span></div>
+                    </div>
+
+                    <div class="inputField">
+                        <label>Zip/Postal Code : </label>
+                        <div><input type="text" id="zipCode" onblur="validateZipCode()"></div> 
+                        <div><span id="zipCodeError" style="color: red;"></span></div>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" id="btn" value="SUBMIT">
+                        <div><span id="formError" style="color: red;"></span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="formValidation.js"></script>
+    </body>
+</html>
